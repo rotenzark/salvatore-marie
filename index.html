@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <title>Salvatore + Marie — Concept store d'arte e design ai Navigli, Milano dal 1989</title>
 <meta name="description" content="Salvatore + Marie: dal 1989 il concept store dei Navigli, in Via Vigevano 33 a Milano. Bijoux, abbigliamento sartoriale, ceramiche, borse e oggetti d'arte da indossare, scelti da due designer. 4,9★ su Google. Vieni a trovarci.">
 <meta name="theme-color" content="#D6402C">
@@ -26,9 +27,7 @@
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script>document.documentElement.className = document.documentElement.className.replace('no-js','js');</script>
@@ -52,13 +51,40 @@
     "postalCode": "20144",
     "addressCountry": "IT"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 45.4529928, "longitude": 9.1721063 },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4529928,
+    "longitude": 9.1721063
+  },
   "areaServed": "Navigli, Milano",
-  "sameAs": ["https://www.instagram.com/salvatoremarieshop/"],
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "19", "bestRating": "5" },
+  "sameAs": [
+    "https://www.instagram.com/salvatoremarieshop/"
+  ],
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:30", "closes": "13:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "15:30", "closes": "19:30" }
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "10:30",
+      "closes": "13:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "15:30",
+      "closes": "19:30"
+    }
   ]
 }
 </script>
@@ -241,7 +267,7 @@
         <figure class="where__facade">
           <img src="img/shop/facciata.jpg" width="1050" height="788" alt="La facciata di Salvatore + Marie in Via Vigevano 33, ai Navigli" loading="lazy">
         </figure>
-        <iframe title="Mappa — Salvatore + Marie, Via Vigevano 33, Milano" src="https://www.google.com/maps?q=Via%20Vigevano%2033,%2020144%20Milano&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="mappa-clic" data-mappa-clic style="--mappa-h: 320px"><template><iframe title="Mappa — Salvatore + Marie, Via Vigevano 33, Milano" src="https://www.google.com/maps?q=Via%20Vigevano%2033,%2020144%20Milano&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/search/?api=1&amp;query=Via%20Vigevano%2033%2C%2020144%20Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
       </div>
     </div>
   </section>
@@ -277,6 +303,7 @@
     <p data-i18n="foot.demo">Sito dimostrativo realizzato da Bespoke Studio · dati pubblici (Google, Instagram). Foto © Salvatore + Marie.</p>
     <a href="#top" class="foot__up" data-i18n="foot.up">Torna su ↑</a>
   </div>
+  <p class="privacy-link"><a href="privacy.html">Privacy</a></p>
 </footer>
 
 <div class="action-bar" aria-label="Azioni rapide">
@@ -286,5 +313,6 @@
 </div>
 
 <script src="js/main.js?v=1"></script>
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>

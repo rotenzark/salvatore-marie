@@ -282,3 +282,12 @@ html.no-js #intro,html.reduce-motion #intro{display:none}
   .hero__meta{gap:1.2rem}
   .where__map iframe{height:240px}
 }
+
+/*MAPPACLIC*/
+/* la mappa Google si carica solo al clic (giro privacy 1/10/2026) */
+.mappa-clic { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: var(--mappa-h, 320px); box-sizing: border-box; padding: 24px; text-align: center; background: repeating-linear-gradient(0deg, rgba(127, 127, 127, 0.14) 0 1px, transparent 1px 28px), repeating-linear-gradient(90deg, rgba(127, 127, 127, 0.14) 0 1px, transparent 1px 28px); }
+.mappa-clic__velo { display: flex; flex-direction: column; align-items: center; gap: 12px; max-width: 32em; }
+.mappa-clic__btn { display: inline-block; padding: 0.75em 1.4em; border: 2px solid currentColor; border-radius: 999px; color: inherit; font: inherit; font-weight: 600; line-height: 1.2; text-decoration: none; background: transparent; cursor: pointer; }
+.mappa-clic__btn:hover, .mappa-clic__btn:focus-visible { text-decoration: underline; }
+.mappa-clic__nota { margin: 0; font-size: 0.85em; line-height: 1.45; }
+/*/MAPPACLIC*/
